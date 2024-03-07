@@ -38,7 +38,7 @@ const About = () => {
               </p>
             </div>
             <div className="about-down-picture">
-              <img src="/src/assets/image3.jpg" alt="My Picture" width="300px" height="300px" />
+              <img src="./src/assets/image/image3.jpg" alt="My Picture" width="300px" height="300px" />
             </div>
           </div>
         </div>
