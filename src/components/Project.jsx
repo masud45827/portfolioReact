@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import projectphoto from '../assets/image/image_p1.png';
 
 const Project = () => {
   return (
@@ -22,7 +23,7 @@ const Project = () => {
         </div>
         <div className="project-section">
           <div className="project-image">
-            <img src="./public/image/image_p1.png" />
+            <img src= {projectphoto} />
           </div>
           <div>
             <h1>Project Name</h1>
@@ -55,7 +56,7 @@ const Project = () => {
             </div>
           </div>
           <div className="project-image">
-            <img src="./public/image/image_p1.png" />
+            <img src= {projectphoto} />
           </div>
         </div>
       </div>
@@ -76,7 +77,7 @@ const Project = () => {
         <div className="project-grid">
           <div className="other-project-section">
             <div className="project-image">
-              <img src="./public/image/image_p1.png" />
+              <img src= {projectphoto} />
             </div>
             <div className="project-grid-description">
               <h3>Project Name</h3>
@@ -95,7 +96,7 @@ const Project = () => {
           </div>
           <div className="other-project-section">
             <div className="project-image">
-              <img src="./public/image/image_p1.png" />
+              <img src= {projectphoto} />
             </div>
             <div className="project-grid-description">
               <h3>Project Name</h3>
@@ -114,7 +115,7 @@ const Project = () => {
           </div>
           <div className="other-project-section">
             <div className="project-image">
-              <img src="./public/image/image_p1.png" />
+              <img src= {projectphoto} />
             </div>
             <div className="project-grid-description">
               <h3>Project Name</h3>
@@ -133,7 +134,7 @@ const Project = () => {
           </div>
           <div className="other-project-section">
             <div className="project-image">
-              <img src="./public/image/image_p1.png" />
+              <img src= {projectphoto} />
             </div>
             <div className="project-grid-description">
               <h3>Project Name</h3>

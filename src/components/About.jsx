@@ -1,5 +1,5 @@
 import React from 'react';
-
+import profilephoto from '../assets/image/image3.jpg'
 const About = () => {
     return (
         <div id="about">
@@ -38,7 +38,7 @@ const About = () => {
               </p>
             </div>
             <div className="about-down-picture">
-              <img src="./public/image/image3.jpg" alt="My Picture" width="300px" height="300px" />
+              <img src={profilephoto} alt="My Picture" width="300px" height="300px" />
             </div>
           </div>
         </div>
