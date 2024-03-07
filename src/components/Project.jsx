@@ -22,7 +22,7 @@ const Project = () => {
         </div>
         <div className="project-section">
           <div className="project-image">
-            <img src="./src/assets/image/image_p1.png" />
+            <img src="./public/image/image_p1.png" />
           </div>
           <div>
             <h1>Project Name</h1>
@@ -55,7 +55,7 @@ const Project = () => {
             </div>
           </div>
           <div className="project-image">
-            <img src="./src/assets/image/image_p1.png" />
+            <img src="./public/image/image_p1.png" />
           </div>
         </div>
       </div>
@@ -76,7 +76,7 @@ const Project = () => {
         <div className="project-grid">
           <div className="other-project-section">
             <div className="project-image">
-              <img src="./src/assets/image/image_p1.png" />
+              <img src="./public/image/image_p1.png" />
             </div>
             <div className="project-grid-description">
               <h3>Project Name</h3>
@@ -95,7 +95,7 @@ const Project = () => {
           </div>
           <div className="other-project-section">
             <div className="project-image">
-              <img src="./src/assets/image/image_p1.png" />
+              <img src="./public/image/image_p1.png" />
             </div>
             <div className="project-grid-description">
               <h3>Project Name</h3>
@@ -114,7 +114,7 @@ const Project = () => {
           </div>
           <div className="other-project-section">
             <div className="project-image">
-              <img src="./src/assets/image/image_p1.png" />
+              <img src="./public/image/image_p1.png" />
             </div>
             <div className="project-grid-description">
               <h3>Project Name</h3>
@@ -133,7 +133,7 @@ const Project = () => {
           </div>
           <div className="other-project-section">
             <div className="project-image">
-              <img src="./src/assets/image/image_p1.png" />
+              <img src="./public/image/image_p1.png" />
             </div>
             <div className="project-grid-description">
               <h3>Project Name</h3>
