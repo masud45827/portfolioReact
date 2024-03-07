@@ -7,6 +7,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Experience from './components/Experience'
 import Project from './components/Project'
+import '../public/image'
 
 function App() {
   return (
