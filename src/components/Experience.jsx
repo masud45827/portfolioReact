@@ -43,7 +43,7 @@ const Experience = () => {
         <hr class="vertical-line"/>
         <div className="job-title">
             <h1>Job title</h1>
-            <h4>Company Name</h4>
+            <h4>Company Name1</h4>
             <hr></hr>
             <a>April 2022 - march 2023</a>
         </div>
