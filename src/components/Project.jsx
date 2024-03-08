@@ -25,7 +25,7 @@ const Project = () => {
           <div className="project-image">
             <img src= {projectphoto} />
           </div>
-          <div>
+          <div className="featured-project-description">
             <h1>Project Name</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
@@ -41,7 +41,7 @@ const Project = () => {
           </div>
         </div>
         <div className="project-section">
-          <div>
+          <div className="featured-project-description">
             <h1>Project Name</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
