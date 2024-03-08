@@ -41,12 +41,12 @@ const Menu = () => {
               </ul>
               <ul className="button">
                 <li>
-                  <button onClick={() => (document.location = "#Resume")}>
+                  <button >
                     Resume
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => (document.location = "#Hire me")}>
+                  <button>
                     Hire me
                   </button>
                 </li>
