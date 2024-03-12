@@ -1,8 +1,7 @@
 // contactform
 
 import React, { useState } from "react";
-import ContactForm from "../contact/ContactForm";
-
+import ContactForm from "./contact/ContactForm";
 function Contact() {
   const [showMessage, setShowMessage] = useState(false);
   const [buttonText, setButtonText] = useState(" Write Message" );
