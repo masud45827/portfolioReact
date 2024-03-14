@@ -24,7 +24,7 @@ function App() {
        <Menu /> 
         <Routes>
         
-          <Route path = '/' element={<Middle />} />
+          <Route path = '/portfolioReact' element={<Middle />} />
           <Route path='/about' element={<About />} />
           <Route path ='/datafetch' element={<Datafetch />} />
           <Route path='/experience' element={<Experience />} />
