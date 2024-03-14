@@ -8,17 +8,30 @@ import Contact from './components/Contact'
 import Experience from './components/Experience'
 import Project from './components/Project'
 import Datafetch from './components/Datafetch'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
     <div>
-     <Menu/> 
+     {/* <Menu/> 
      <Datafetch/>
      <Middle/>
      <About/>
      <Experience/>
      <Project/>
-     <Contact/>
+     <Contact/> */}
+     <BrowserRouter>
+       <Menu /> 
+        <Routes>
+        
+          <Route path = '/' element={<Middle />} />
+          <Route path='/about' element={<About />} />
+          <Route path ='/datafetch' element={<Datafetch />} />
+          <Route path='/experience' element={<Experience />} />
+          <Route path='/project' element={<Project />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+     </BrowserRouter>
     </div>
   )
 }
