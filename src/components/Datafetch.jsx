@@ -1,3 +1,35 @@
+
+import React, { useEffect, useState } from "react";
+import useFetch from "../hooks/useFetch";
+
+const Datafetch = () => {
+const [userId, setUserId] = useState(1);
+const len = 10;
+const {name,email,loading} = useFetch(`https://jsonplaceholder.typicode.com/users/${userId}`);
+const fetchNextUser = () =>{
+  console.log(userId,len);
+  userId<len?setUserId(userId+1):setUserId(1);
+}
+  return (
+    <div id="data-fetch">
+      <button onClick={fetchNextUser}>Fetch Data</button>
+      <h1>Fetch data by custom hooks</h1>
+      {loading ? (
+        <h1 style={{ color: "red" }}>Loading...</h1>
+      ) : (
+       <div>
+         <h2>{name}</h2>
+          <p>{email}</p>
+       </div>
+      )}
+    </div>
+  );
+};
+
+export default Datafetch;
+
+
+
 // import React, { useEffect, useState } from "react";
 // import useFetch from "../hooks/useFetch";
 // const Datafetch = () => {
@@ -71,36 +103,6 @@
 // };
 
 // export default Datafetch;
-
-
-import React, { useEffect, useState } from "react";
-import useFetch from "../hooks/useFetch";
-
-const Datafetch = () => {
-const [userId, setUserId] = useState(1);
-const len = 10;
-const {name,email,loading} = useFetch(`https://jsonplaceholder.typicode.com/users/${userId}`);
-const fetchNextUser = () =>{
-  console.log(userId,len);
-  userId<len?setUserId(userId+1):setUserId(1);
-}
-  return (
-    <div id="data-fetch">
-      <button onClick={fetchNextUser}>Fetch Data</button>
-      <h1>Fetch data by custom hooks</h1>
-      {loading ? (
-        <h1 style={{ color: "red" }}>Loading...</h1>
-      ) : (
-       <div>
-         <h2>{name}</h2>
-          <p>{email}</p>
-       </div>
-      )}
-    </div>
-  );
-};
-
-export default Datafetch;
 
 
 
