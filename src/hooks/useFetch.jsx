@@ -1,17 +1,41 @@
 import React, { useEffect, useState } from 'react';
 
 const useFetch = (url) => {
-    console.log("yes",url)
-    const [data,setData] =useState(null);
+    const [name,setName] =useState("");
+    const [email,setEmail] =useState("");
+    const [loading,setLoading] = useState(false)
     useEffect(()=>{
        const fetchData = async() =>{
+         setLoading(true)
          const respone = await fetch(url);
          const  res = await respone.json();
-         setData(res);
+         setName(res.name);
+         setEmail(res.email);
+         setLoading(false)
        }
        fetchData();
     },[url]);
-    return data
+    return {name,email,loading}
 };
 
 export default useFetch;
+
+
+
+
+// import React, { useEffect, useState } from 'react';
+
+// const useFetch = (url) => {
+//     const [data,setData] =useState(null);
+//     useEffect(()=>{
+//        const fetchData = async() =>{
+//          const respone = await fetch(url);
+//          const  res = await respone.json();
+//          setData(res);
+//        }
+//        fetchData();
+//     },[url]);
+//     return data
+// };
+
+// export default useFetch;
