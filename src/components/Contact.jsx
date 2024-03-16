@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import ContactForm from "./contact/ContactForm";
+import ContactFormText from "./contact/ContactFormText";
 function Contact() {
   const [showMessage, setShowMessage] = useState(false);
   const [buttonText, setButtonText] = useState("Write Message");
@@ -26,14 +27,8 @@ function Contact() {
             <hr />
           </div>
         </div>
-        <div id="contact-text">
-          <p>
-            I am currently seeking employment, and I would appreciate it if you
-            could contact me with any available job opportunities.
-          </p>
-        </div>
         <div id="contact-button">
-          {showMessage && <ContactForm/>} 
+          {showMessage?<ContactForm/>:<ContactFormText/>}
           <button
             type="button"
             id="contact-button-inner"
